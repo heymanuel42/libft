@@ -6,19 +6,13 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 17:10:48 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/28 17:11:49 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:41:47 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_BONUS_H
 # define LIBFT_BONUS _HAS_CHAR16_T_LANGUAGE_SUPPORT
 # include "libft.h"
-/// @brief linked list
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}t_list;
 
 ///List functions
 

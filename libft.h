@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/28 17:11:32 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:41:52 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,4 +217,12 @@ void	ft_putendl_fd(char *s, int fd);
 /// @param n
 /// @param fd
 void	ft_putnbr_fd(int n, int fd);
+
+/// @brief linked list
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}t_list;
+
 #endif
