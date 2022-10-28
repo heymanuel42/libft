@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+         #
+#    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/27 11:59:03 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/10/28 17:13:49 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,15 +50,15 @@ SRC				+= ft_putendl_fd.c
 SRC				+= ft_putnbr_fd.c
 
 #BONUS
-SRCBONUS				= ft_lstnew.c
-SRCBONUS				+= ft_lstadd_front.c
-SRCBONUS				+= ft_lstsize.c
-SRCBONUS				+= ft_lstlast.c
-SRCBONUS				+= ft_lstadd_back.c
-SRCBONUS				+= ft_lstdelone.c
-SRCBONUS				+= ft_lstclear.c
-SRCBONUS				+= ft_lstiter.c
-SRCBONUS				+= ft_lstmap.c
+SRCBONUS				= ft_lstnew_bonus.c
+SRCBONUS				+= ft_lstadd_front_bonus.c
+SRCBONUS				+= ft_lstsize_bonus.c
+SRCBONUS				+= ft_lstlast_bonus.c
+SRCBONUS				+= ft_lstadd_back_bonus.c
+SRCBONUS				+= ft_lstdelone_bonus.c
+SRCBONUS				+= ft_lstclear_bonus.c
+SRCBONUS				+= ft_lstiter_bonus.c
+SRCBONUS				+= ft_lstmap_bonus.c
 SRCBONUS				+= $(SRC)
 
 DEPENDENCIES 		= libft.h
