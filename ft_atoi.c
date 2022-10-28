@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:14:02 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/25 13:55:39 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:32:13 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int	get_white_spaces(const char *str)
+static int	get_white_spaces(const char *str)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int	get_white_spaces(const char *str)
 	return (i);
 }
 
-int	ft_pow(int nb, int power)
+static int	ft_pow(int nb, int power)
 {
 	if (power < 0)
 		return (0);

@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:56:41 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/28 17:13:11 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:32:45 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-t_list	*create_and_add_back(t_list **lst, void *content, void (*del)(void*))
+static t_list	*new_add_back(t_list **lst, void *content, void (*del)(void*))
 {
 	t_list	*node;
 
@@ -39,7 +39,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void*))
 		return (NULL);
 	while (lst != NULL)
 	{
-		create_and_add_back(&new, f(lst->content), del);
+		new_add_back(&new, f(lst->content), del);
 		lst = lst->next;
 	}
 	return (new);

@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:01:44 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/26 21:16:15 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/10/28 17:33:17 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-char	*get_next_word(const char *str, char sep, char **new)
+static char	*get_next_word(const char *str, char sep, char **new)
 {
 	int	i;
 	int	word;
@@ -42,7 +42,7 @@ char	*get_next_word(const char *str, char sep, char **new)
 	return ((char *)str + i);
 }
 
-int	ft_isspace(char *str)
+static int	ft_isspace(char *str)
 {
 	while (*str == '\t'
 		|| *str == '\n'
@@ -58,7 +58,7 @@ int	ft_isspace(char *str)
 		return (0);
 }
 
-int	count_words(const char *str, char sep)
+static int	count_words(const char *str, char sep)
 {
 	int		i;
 	int		nwords;
