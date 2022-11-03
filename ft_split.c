@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:01:44 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/28 17:33:17 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/02 20:39:41 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,22 +40,6 @@ static char	*get_next_word(const char *str, char sep, char **new)
 	}
 	*new = ft_substr(str, i, word);
 	return ((char *)str + i);
-}
-
-static int	ft_isspace(char *str)
-{
-	while (*str == '\t'
-		|| *str == '\n'
-		|| *str == '\v'
-		|| *str == '\f'
-		|| *str == '\r'
-		|| *str == 127
-		|| *str == ' ')
-		str++;
-	if (*str == '\0')
-		return (1);
-	else
-		return (0);
 }
 
 static int	count_words(const char *str, char sep)
