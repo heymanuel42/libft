@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/31 11:46:51 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:23:06 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,6 +217,12 @@ void	ft_putendl_fd(char *s, int fd);
 /// @param n
 /// @param fd
 void	ft_putnbr_fd(int n, int fd);
+
+/// @brief Calculates the power of a certain number
+/// @param nb
+/// @param power
+/// @return
+long	ft_pow(long nb, int power);
 
 /// @brief linked list
 typedef struct s_list

@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/28 17:38:12 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/11/08 17:22:01 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,9 @@ SRC				+= ft_putstr_fd.c
 SRC				+= ft_putendl_fd.c
 SRC				+= ft_putnbr_fd.c
 
+#additional
+SRC				+= ft_pow.c
+
 #BONUS
 SRCBONUS				= ft_lstnew_bonus.c
 SRCBONUS				+= ft_lstadd_front_bonus.c
@@ -60,6 +63,7 @@ SRCBONUS				+= ft_lstclear_bonus.c
 SRCBONUS				+= ft_lstiter_bonus.c
 SRCBONUS				+= ft_lstmap_bonus.c
 SRCBONUS				+= $(SRC)
+
 
 OBJECTS				= $(SRC:.c=.o)
 OBJECS_BONUS		= $(SRCBONUS:.c=.o)
