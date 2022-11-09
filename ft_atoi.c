@@ -6,7 +6,7 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:14:02 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/28 17:32:13 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:49:48 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,6 @@ static int	get_white_spaces(const char *str)
 		|| str[i] == ' ')
 			i++;
 	return (i);
-}
-
-static int	ft_pow(int nb, int power)
-{
-	if (power < 0)
-		return (0);
-	else if (power == 0 || (nb == 0 && power == 0))
-		return (1);
-	else
-		return (nb * ft_pow(nb, power - 1));
 }
 
 int	ft_atoi(const char *str)
