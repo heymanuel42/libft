@@ -6,7 +6,7 @@
 #    By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:24:29 by ejanssen          #+#    #+#              #
-#    Updated: 2022/10/28 17:38:12 by ejanssen         ###   ########.fr        #
+#    Updated: 2022/11/15 11:20:47 by ejanssen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,43 +49,45 @@ SRC				+= ft_putstr_fd.c
 SRC				+= ft_putendl_fd.c
 SRC				+= ft_putnbr_fd.c
 
-#BONUS
-SRCBONUS				= ft_lstnew_bonus.c
-SRCBONUS				+= ft_lstadd_front_bonus.c
-SRCBONUS				+= ft_lstsize_bonus.c
-SRCBONUS				+= ft_lstlast_bonus.c
-SRCBONUS				+= ft_lstadd_back_bonus.c
-SRCBONUS				+= ft_lstdelone_bonus.c
-SRCBONUS				+= ft_lstclear_bonus.c
-SRCBONUS				+= ft_lstiter_bonus.c
-SRCBONUS				+= ft_lstmap_bonus.c
-SRCBONUS				+= $(SRC)
+#PRINTF
+SRC 			+= printf/ft_printf.c
+SRC				+= printf/ft_printf_char.c
+SRC				+= printf/ft_printf_dec.c
+SRC				+= printf/ft_printf_str.c
+SRC				+= printf/ft_printf_hex.c
+SRC				+= printf/ft_printf_ptr.c
+SRC				+= printf/ft_printf_padstr.c
 
+#BONUS
+SRC				+= ft_lstnew.c
+SRC				+= ft_lstadd_front.c
+SRC				+= ft_lstsize.c
+SRC				+= ft_lstlast.c
+SRC				+= ft_lstadd_back.c
+SRC				+= ft_lstdelone.c
+SRC				+= ft_lstclear.c
+SRC				+= ft_lstiter.c
+SRC				+= ft_lstmap.c
+
+#extra
+SRC				+= ft_swap.c
 OBJECTS				= $(SRC:.c=.o)
-OBJECS_BONUS		= $(SRCBONUS:.c=.o)
+
 NAME				= libft.a
 
-.PHONY: all
 all: $(NAME)
 
-.c.o:
-	$(CC) -c $(CFLAGS) -o $@ $< $(INC)
 
-.PHONY: bonus
-bonus: $(OBJECS_BONUS)
-	ar r $(NAME) $^
 
-.PHONY: $(NAME)
 $(NAME): $(OBJECTS)
 	ar r $@ $^
 
-.PHONY: clean
 clean:
-	rm -f $(OBJECTS) $(OBJECS_BONUS)
+	rm -f $(OBJECTS)
 
-.PHONY: fclean
 fclean: clean
 	rm -f $(NAME)
 
-.PHONY: re
 re : fclean all
+
+.PHONY: all clean fclean re $(NAME)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ejanssen <ejanssen@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:16:53 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/10/31 11:46:51 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/15 11:22:22 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,6 +217,11 @@ void	ft_putendl_fd(char *s, int fd);
 /// @param n
 /// @param fd
 void	ft_putnbr_fd(int n, int fd);
+
+/// @brief Swap two integers
+/// @param a
+/// @param b
+void	swap_int(int *a, int *b);
 
 /// @brief linked list
 typedef struct s_list
