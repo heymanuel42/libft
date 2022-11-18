@@ -6,14 +6,14 @@
 /*   By: ejanssen <ejanssen@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 21:43:48 by ejanssen          #+#    #+#             */
-/*   Updated: 2022/11/18 18:45:46 by ejanssen         ###   ########.fr       */
+/*   Updated: 2022/11/18 18:46:39 by ejanssen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft/libft.h"
+# include "../libft.h"
 # include <stdlib.h>
 
 int	ft_printf(const char *str, ...);
